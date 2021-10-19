@@ -1,0 +1,39 @@
+site_name: My Docs
+site_description: Apresentação do MkDocs no A3Tech
+site_author: Nilson Cunha
+copyright: MkDocs - Apresentação A3Tech
+nav: 
+  - Bem-vindo: index.md
+  - Antes de começar: pergunta.md
+  - Sobre documentação:
+    - Como encontrei: sobre.md
+
+theme:
+  #name: readthedocs
+  name: material
+  favicon: img/a3_icon.ico
+  logo: img/a3_icon.ico
+  language: pt
+  features:
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: teal
+      accent: pink
+      toggle:
+          icon: material/toggle-switch-off-outline
+          name: Switch to dark mode
+    - scheme: slate
+      primary: purple
+      toggle:
+          icon: material/toggle-switch
+          name: Switch to light mode
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
+    - pymdownx.highlight
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - pymdownx.keys
